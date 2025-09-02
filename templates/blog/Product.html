@@ -1,0 +1,319 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product| MEN'S CLUB</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<body>
+     
+    <!-- Top Bar -->
+    <div class="bg-dark text-white text-center py-2">
+        <span>🔥 Shop Freely – Free Shipping on All Orders Starting from 1500 EGP 🔥</span>
+    </div>
+
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+
+    <!-- Logo (Left) -->
+    <a class="navbar-brand fw-bold text-danger" href="#">
+      <img src="https://mensclubcollection.com/cdn/shop/files/mc_logo-01_1879a4d6-eb9c-4fec-bd57-4961a0c344a6.png?v=1724846392&width=220"
+           alt="MC Logo">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <!-- Centered Menu -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'blog' %}">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Summer Shop</a>
+        </li>
+
+        <!-- Men Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="{% url 'men' %}">Men</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Clothing</a></li>
+            <li><a class="dropdown-item" href="#">Shoes</a></li>
+            <li><a class="dropdown-item" href="#">Accessories</a></li>
+          </ul>
+        </li>
+
+        <!-- Kids Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Kids</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Clothing</a></li>
+            <li><a class="dropdown-item" href="#">Shoes</a></li>
+            <li><a class="dropdown-item" href="#">Sale</a></li>
+          </ul>
+        </li>
+
+        <!-- Sale Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Sale</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Men’s Sale</a></li>
+            <li><a class="dropdown-item" href="#">Kids’ Sale</a></li>
+            <li><a class="dropdown-item" href="#">Accessories Sale</a></li>
+          </ul>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="{% url 'About' %}">About Us</a>
+        </li>
+
+      </ul>
+
+      <!-- Right Side Buttons -->
+      <div class="d-flex align-items-center">
+        <a href="#" class="btn me-2">Login</a>
+        <button class="btn me-2">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="btn">
+<i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+
+<!-- Product Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row ">
+  <!-- Thumbnails -->
+  <div class="col-2 d-flex flex-column align-items-start thumbnails">
+    <a href="#img1"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3123copy.jpg?v=1755777216&width=200" alt="Thumb 1"></a>
+    <a href="#img2"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3116copy.jpg?v=1755777216&width=200" alt="Thumb 2"></a>
+    <a href="#img3"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3120copy.jpg?v=1755777216&width=200" alt="Thumb 3"></a>
+    <a href="#img4"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3126copy.jpg?v=1755777216&width=200" alt="Thumb 4"></a>
+    <a href="#img5"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3816.jpg?v=1755777216&width=200" alt="Thumb 5"></a>
+    <a href="#img6"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3814.jpg?v=1755777216&width=200" alt="Thumb 6"></a>
+    <a href="#img7"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3819.jpg?v=1755777216&width=200" alt="Thumb 7"></a>
+    <a href="#img8"><img src="https://mensclubcollection.com/cdn/shop/files/menzclub3811.jpg?v=1755777216&width=200" alt="Thumb 8"></a>
+  </div>
+
+  <!-- Big product images -->
+  <div class="col-6">
+    <section class="product-scroll-section">
+      <div class="product-images-sequence">
+        <img id="img1" src="https://mensclubcollection.com/cdn/shop/files/menzclub3123copy.jpg?v=1755777216&width=1200" alt="Product 1">
+        <img id="img2" src="https://mensclubcollection.com/cdn/shop/files/menzclub3116copy.jpg?v=1755777216&width=1200" alt="Product 2">
+        <img id="img3" src="https://mensclubcollection.com/cdn/shop/files/menzclub3120copy.jpg?v=1755777216&width=1200" alt="Product 3">
+        <img id="img4" src="https://mensclubcollection.com/cdn/shop/files/menzclub3126copy.jpg?v=1755777216&width=1200" alt="Product 4">
+        <img id="img5" src="https://mensclubcollection.com/cdn/shop/files/menzclub3816.jpg?v=1755777216&width=1200" alt="Product 5">
+        <img id="img6" src="https://mensclubcollection.com/cdn/shop/files/menzclub3814.jpg?v=1755777216&width=1200" alt="Product 6">
+        <img id="img7" src="https://mensclubcollection.com/cdn/shop/files/menzclub3819.jpg?v=1755777216&width=1200" alt="Product 7">
+        <img id="img8" src="https://mensclubcollection.com/cdn/shop/files/menzclub3811.jpg?v=1755777216&width=1200" alt="Product 8">
+      </div>
+    </section>
+  </div>
+
+
+
+     <!-- Product Info -->
+      <div class="col-md-4 product-info">
+        <h5 class="text-uppercase text-muted">mensclubcollection</h5>
+        <h2 class="fw-bold">Slim Fit Printed Shirt</h2>
+        <p class="text-muted">SKU: 001/S25/M102533ORANGE - 11100004980</p>
+
+        <p>
+          <span class="text-danger fs-4 fw-bold">Sale price 403.50 EGP</span><br>
+          <span class="text-muted text-decoration-line-through">Regular price 1,345.00 EGP</span>
+        </p>
+        <hr>
+
+        <!-- Quantity -->
+          <div class="quantity-box d-flex align-items-center mb-3">
+    <button class="qty-btn" onclick="changeQty(-1)">−</button>
+    <input type="text" id="qtyInput" value="1" readonly>
+    <button class="qty-btn" onclick="changeQty(1)">+</button>
+  </div>
+
+        <!-- Colors -->
+  <p id="selectedColor" class="fw-bold mb-1">Color: PETROL</p>
+<div class="d-flex gap-2 mb-3">
+  <!-- PETROL → jump to image 1 -->
+  <div class="color-circle border" 
+       data-color="PETROL" 
+       data-target="#img1"></div>
+
+  <!-- YELLOW → jump to image 5 -->
+  <div class="color-circle bg-warning" 
+       data-color="YELLOW" 
+       data-target="#img5"></div>
+</div>
+
+
+        <!-- Sizes -->
+        <p class="fw-bold mb-1">Size:</p>
+  <div class="size-buttons d-flex flex-wrap gap-2 mb-4">
+    <button class="size-btn sold-out" disabled>S</button>
+    <button class="size-btn active">M</button>
+    <button class="size-btn">L</button>
+    <button class="size-btn">XL</button>
+    <button class="size-btn sold-out" disabled>2XL</button>
+    <button class="size-btn sold-out" disabled>3XL</button>
+  </div>
+
+        <!-- Cart Buttons -->
+       
+         <button class="btn add-cart w-100 mb-3">ADD TO CART</button>
+  <button class="btn buy-now w-100">BUY IT NOW</button>
+        
+
+        <!-- Model Measurements -->
+        <h6 class="fw-bold">Model Measurements :</h6>
+        <ul class="list-unstyled mb-3">
+          <li>Height: 185 cm</li>
+          <li>Waist: 79 cm</li>
+          <li>Hips: 98 cm</li>
+          <li>Weight: 78 kg</li>
+          <li>Sample Size: L</li>
+        </ul>
+
+        <!-- Material & Care -->
+        <h6 class="fw-bold">Material and care</h6>
+        <p>Fabric: 100% Cotton</p>
+        <p class="small text-muted">
+          Caring for your clothes is caring for the environment. <br><br>Lower temperature washes and delicate spin cycles are gentler on garments and help to protect the color, shape, and structure of the fabric. Furthermore, they reduce the amount of energy used in care processes.
+        </p>
+        <ul class="small text-muted">
+          <li>Wash at max. 30ºC/86ºF with the short spin cycle</li>
+          <li>Do not use bleach</li>
+          <li>Iron at a maximum of 110ºC/230ºF</li>
+          <li>Do not dry clean</li>
+          <li>Do not tumble dry</li>
+        </ul>
+      </div>
+</section>
+
+<!-- Related Products -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h4 class="fw-bold mb-4 text-center">RELATED PRODUCTS</h4>
+    <div class="row text-center">
+
+    <!-- Product Card -->
+                 {%for man in men %}
+                <div class="col-md-3 col-sm-6">
+                    <div class="product-card text-center">
+                        <!-- Badge on top of image -->
+                        <div class="position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-2">SAVE {{man.discount}}%</span>
+                            <a href="Product.html">
+                            <img src="{{man.image}}"
+                                class="img-fluid" alt="Oversize T-shirt">
+                            </a>
+                        </div>
+                        <!-- Product Details -->
+                        <div class="mt-3">
+                            <h6 class="text-uppercase">{{man.name}}</h6>
+                            <div>
+                                <span class="fw-bold text-danger">{{man.new}}</span>
+                                <span class="text-muted text-decoration-line-through ms-2">{{man.old}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+ 
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Footer -->
+<footer class="bg-light text-dark pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Find Us -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Find Us</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Store</a></li>
+          <li><a href="{% url 'Contact' %}" class="text-dark text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Customer Service -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Customer Service</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Return & Exchange Policy</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Shipping Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-md-6 mb-4">
+        <h5 class="fw-bold">Newsletter</h5>
+        <p>Sign up to our newsletter to receive exclusive offers.</p>
+        <div class="d-flex">
+          <input type="email" class="form-control me-2" placeholder="E-mail">
+          <button class="btn btn-light">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="text-center my-3">
+      <a href="#" class="text-dark me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-dark me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-dark me-3"><i class="fab fa-pinterest"></i></a>
+      <a href="#" class="text-dark me-3"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="text-dark me-3"><i class="fab fa-tiktok"></i></a>
+      <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-3">
+      <p class="mb-0">&copy; 2025 - MEN'S CLUB | Powered by Shopify</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap & JS -->
+    <script src="{% static 'js/script3.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

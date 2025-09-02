@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+.navbar {
+  padding: 19.2px 48px; /* top/bottom | left/right */
+  transition: top 0.3s;
+  font-family: 'Nunito Sans', sans-serif;
+  height: 95px;
+}
+.navbar-brand img {
+  height: 60px;
+  width: 110px;
+}
+body{
+    background-color: #f0f0f0;
+
+    font-family: 'Instrument Sans', sans-serif;
+}
+.Hema{
+        font-size: 29px;
+        
+
+}
+
+/* Accordion Filter Styling */
+.accordion-item {
+    background-color: #f0f0f0;
+    border: none; /* Remove borders */
+}
+.color-swatch.blue { background-color: #0000FF; }
+.color-swatch.black { background-color: #000000; }
+.color-swatch.brown { background-color: #A52A2A; }
+.color-swatch.gray { background-color: #808080; }
+.color-swatch.green { background-color: #008000; }
+.color-swatch.lightblue { background-color: #ADD8E6; }
+.color-swatch.purple { background-color: #800080; }
+.color-swatch.red { background-color: #FF0000; }
+.color-swatch.yellow { background-color: #FFFF00; border: 1px solid #ddd; }
+.color-swatch.white { background-color: #FFFFFF; border: 1px solid #ddd; }
+
+.accordion-button {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    padding: 1rem 0; /* Adjust padding to align with other elements */
+    color: #212529;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f0f0f0; /* Remove blue background when open */
+    box-shadow: none; /* Remove shadow when open */
+    color: #212529;
+}
+
+.accordion-button:focus {
+    box-shadow: none; /* Remove focus ring */
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button::after {
+    /* Optional: Style the dropdown arrow */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+    padding: 0.5rem 0 1rem 0; /* Adjust body padding */
+}
+
+/* Keep previous styles for list items and color swatches */
+.accordion-body ul li {
+    padding: 4px 0;
+}
+
+.accordion-body ul li a:hover {
+    text-decoration: underline !important;
+}
+/* General Styling */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Filter Sidebar Styling */
+.filter-group ul li {
+    padding: 4px 0;
+}
+
+.filter-group ul li a:hover {
+    text-decoration: underline !important;
+}
+
+.color-swatch {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.color-swatch:hover {
+    transform: scale(1.1);
+}
+
+/* Product Card Styling */
+.product-card {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.75rem;
+    padding: 5px 8px;
+}
+
+.add-to-cart-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.product-card:hover .add-to-cart-btn {
+    opacity: 1; /* Show on hover */
+    transform: translateY(0);
+}
+
+.card-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.product-card img {
+  transition: 0.3s;
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  background-color: #f9f9f9;
+}
+
+.product-card h6 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-family: instrument sans, sans-serif;
+}
+
+.product-card .badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 0;
+}

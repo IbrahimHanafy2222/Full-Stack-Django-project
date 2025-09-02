@@ -1,0 +1,119 @@
+/* Make the scroll container take full viewport height */
+.product-scroll-section {
+display: flex;  flex-direction: column;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+
+ body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #333;}
+
+.product-images-sequence img {
+padding-bottom: 10px   ;
+  width: 100%;
+  height: auto; /* Fixed height for demonstration */
+  object-fit: cover;
+  display: block;
+}
+.thumbnails{
+    width: 100px;
+}
+.thumbnails img {
+  width: 53px;
+  height: 75px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+
+.thumbnails img:hover {
+  border: 2px solid black;
+}
+
+
+
+html {
+  scroll-behavior: smooth; /* smooth scroll on click */
+}
+
+
+
+.navbar {
+  padding: 19.2px 48px; /* top/bottom | left/right */
+  transition: top 0.3s;
+  font-family: 'Nunito Sans', sans-serif;
+  height: 95px;
+}
+.navbar-brand img {
+  height: 60px;
+  width: 110px;
+}
+
+/* Quantity box */
+.quantity-box {
+  border: 1px solid #ccc;
+  width: fit-content;
+  padding: 5px 10px;
+}
+.qty-btn {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+#qtyInput {
+  border: none;
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Colors */
+.color-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/* Sizes */
+.size-btn {
+  min-width: 45px;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
+}
+.size-btn.active {
+  border: 2px solid #000;
+}
+.size-btn.sold-out {
+  text-decoration: line-through;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Buttons */
+.add-cart {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.buy-now {
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+}

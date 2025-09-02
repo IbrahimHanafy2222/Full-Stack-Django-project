@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+.hero {
+  position: relative;
+}
+.product-card img {
+  transition: 0.3s;
+}
+.style2{
+  background: url("../img/img.png") center/cover;
+    min-height: 500px;
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* keeps it aligned under the link */
+}
+
+/* Optional: add subtle shadow */
+.dropdown-menu {
+  border-radius: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.navbar {
+  padding: 19.2px 48px; /* top/bottom | left/right */
+  transition: top 0.3s;
+  font-family: 'Nunito Sans', sans-serif;
+  height: 95px;
+}
+.navbar-brand img {
+  height: 60px;
+  width: 110px;
+}
+.product-card img {
+  background-color: #f9f9f9;
+}
+
+.product-card h6 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-family: instrument sans, sans-serif;
+}
+
+.product-card .badge {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 0;
+}
+.btn-viewall {
+   font-family: 'Nunito Sans', sans-serif; /* or any imported font */
+  font-size: 14px; /* adjust size */
+  border-radius: 0; /* remove rounded corners */
+  height: 45px; /* set a fixed height */
+  width: 135px; /* set a fixed width */
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px; /* vertically center the text */
+}
+.winter{padding: 40px
+    ;}
+
+.hema{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+/* Wrapper for horizontal scroll */
+.category-slider {
+  overflow-x: auto;
+  white-space: nowrap;
+    padding: 20px 0;
+
+}
+
+
+.category-container {
+  display: inline-flex;
+  padding-left: 15px;
+    gap: 15px;
+}
+
+/* Card Style */
+.category-card {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* Overlay text */
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+/* New Arrivals Section */
+.new-arrivals {
+  background-color: #fff;
+  padding: 60px 0;
+}
+.te{
+  font-family: 'Instrument Sans', sans-serif;
+}
+/* Fixed card image size */
+.fixed-size {
+  width: 100%;
+  height: auto  ;
+
+
+}
+.single-product-section {
+  padding: 60px 0;
+}
+
+.single-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.single-product-left img {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.single-product-right {
+  text-align: center;
+}
+
+.single-product-card {
+  position: relative;
+  max-width: 300px;
+  margin: auto;
+}
+
+.single-product-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.single-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #d00;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.single-product-card h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.single-price {
+  margin-bottom: 15px;
+}
+
+.new-price {
+  color: #d00;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 14px;
+}
+
+.btn-view {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-view:hover {
+  background: #333;
+}
+
+
+/* Product card */
+.product-card h6 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 12px;
+}
+
+.pants-section {
+  padding: 50px 0;
+}
+
+.pants-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pants-card img {
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.3s;
+}
+
+.pants-card img:hover {
+  transform: scale(1.05);
+}
